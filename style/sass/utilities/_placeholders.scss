@@ -1,0 +1,53 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.section--title {
+  text-align   : center;
+  margin-bottom: 1.5rem;
+
+  > span {
+    font-family: $first--font;
+    font-size  : 1.5rem;
+    font-weight: 600;
+    color      : $light--orange;
+
+    &.cyan--color {
+      color: $cyan;
+    }
+  }
+
+  > h2 {
+    font-family: $second--font;
+    font-size  : 10vw;
+    font-weight: 800;
+    color      : $dark--blue;
+
+    @include media(x-small) {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.btn {
+  font-family     : $first--font;
+  font-size       : 1rem;
+  font-weight     : 700;
+  text-transform  : capitalize;
+  letter-spacing  : .08rem;
+  border          : none;
+  background-color: transparent;
+  padding         : .8rem 1.8rem;
+  border-radius   : $full--radius;
+  cursor          : pointer;
+  margin-top      : 1rem;
+}
+
+.btn-o {
+  background-color: $dark--orange;
+  color           : $white;
+}
+
+.btn-c {
+  background-color: $cyan;
+  color           : $white;
+}

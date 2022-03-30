@@ -1,0 +1,122 @@
+//Import Utilities
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../utilities/placeholders" as *;
+
+/* ---------- Subscribe Section Start --------- */
+.subscribe--section {
+  padding: 4rem 0 8rem;
+
+  .container {
+
+    @include media(small) {
+      max-width: 35em;
+    }
+
+    .subscribe--title {
+      text-align: center;
+
+      span {
+        font-family: $first--font;
+        font-size  : 1.5rem;
+        font-weight: 600;
+        color      : $cyan;
+      }
+
+      h5 {
+        font-family   : $second--font;
+        font-size     : 10vw;
+        font-weight   : 800;
+        color         : $dark--blue;
+        text-transform: capitalize;
+
+        @include media(x-small) {
+          font-size: 2.5rem;
+        }
+      }
+    }
+
+    form {
+      margin-top: 1rem;
+
+      input {
+        width           : 100%;
+        border          : .13rem solid $light--background;
+        outline         : none;
+        background-color: $dark--background;
+        border-radius   : $full--radius;
+        padding         : 1.5rem;
+        margin-top      : .5rem;
+
+        &::placeholder {
+          font-family   : $first--font;
+          font-weight   : 600;
+          font-size     : 1.1rem;
+          color         : $gray;
+          text-transform: uppercase;
+        }
+
+        &[type="mail"] {
+          margin: 1rem 0;
+        }
+
+        &:last-of-type {
+          font-family     : $first--font;
+          font-size       : 1rem;
+          font-weight     : 700;
+          text-transform  : uppercase;
+          letter-spacing  : .08rem;
+          border          : none;
+          background-color: transparent;
+          padding         : 1rem 1.8rem;
+          border-radius   : $full--radius;
+          cursor          : pointer;
+          background-color: $cyan;
+          color           : $dark--blue;
+          margin-top      : 1rem;
+        }
+
+        &:focus {
+          font-family   : $first--font;
+          color         : $dark--blue;
+          font-size     : .9rem;
+          font-weight   : 600;
+          letter-spacing: .08rem;
+          padding       : 1.4rem;
+        }
+
+        &[type="submit"] {
+
+          @include media(x-small) {
+            margin : .5rem auto 0;
+            width  : 13rem;
+            display: block;
+          }
+        }
+      }
+
+      textarea {
+        width           : 100%;
+        border          : .13rem solid $light--background;
+        outline         : none;
+        background-color: $dark--background;
+        border-radius   : $primary--radius + 1.5rem;
+        padding         : 1.5rem;
+        resize          : none;
+
+        &::placeholder {
+          font-family   : $first--font;
+          font-weight   : 600;
+          font-size     : 1.1rem;
+          color         : $gray;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    img {
+      display: none;
+    }
+  }
+}
+/* ----------- Subscribe Section End ---------- */

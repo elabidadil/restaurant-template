@@ -1,0 +1,111 @@
+//Import Utilities
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../utilities/placeholders" as *;
+
+/* ----------- Booking Section Start ---------- */
+.booking--section {
+  padding: 2rem 0 4rem;
+
+  .container {
+
+    span {
+      font-family : $first--font;
+      color       : $dark--blue;
+      font-weight : bold;
+      font-size   : 1.2rem;
+      margin-right: .2rem;
+    }
+
+    .booking--arrow {
+      transform: translateY(.6rem);
+      color    : $dark--blue;
+      font-size: 1.2rem;
+    }
+
+    form {
+      margin-top      : 1.5rem;
+      background-color: $light--background;
+      border-radius   : $secondary--radius;
+      padding         : 2rem 3rem;
+      box-shadow      : $primary--shadow;
+
+      @include media(medium) {
+        display              : grid;
+        gap                  : 1%;
+        grid-template-columns: repeat(auto-fit, minmax(27%, 1fr));
+      }
+
+      @include media(large) {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        align-items          : flex-start;
+      }
+
+      label {
+        font-family : $first--font;
+        color       : $dark--blue;
+        font-weight : bold;
+        font-size   : 1rem;
+        margin-right: .2rem;
+        display     : inline-block;
+      }
+
+      i {
+        transform: translateY(.1rem);
+        color    : $dark--blue;
+        font-size: 1.1rem;
+      }
+
+      input {
+        width           : 100%;
+        border          : .13rem solid $dark--blue;
+        outline         : none;
+        background-color: $medium--background;
+        border-radius   : $primary--radius + .5rem;
+        padding         : 1.5rem;
+        margin-top      : .5rem;
+        display         : block;
+
+        &[type="mail"]:focus {
+          font-family   : $first--font;
+          color         : $dark--blue;
+          font-size     : .9rem;
+          font-weight   : 600;
+          letter-spacing: .08rem;
+          padding       : 1.4rem;
+        }
+
+        &:not([type="mail"], [type="submit"]) {
+          margin-bottom: 1.6rem;
+        }
+
+        &::-webkit-calendar-picker-indicator {
+          display: none;
+        }
+
+        &[type="submit"] {
+          border          : none;
+          background-color: $cyan;
+          color           : $white;
+          font-family     : $first--font;
+          font-weight     : bold;
+          font-size       : 1rem;
+          text-transform  : capitalize;
+          margin-top      : 2rem;
+
+          @include media(medium) {
+            margin-top: 0;
+            grid-column: span 4;
+          }
+
+          @include media(large) {
+            margin-top : 0;
+            grid-column: auto;
+            margin-top : 1.65rem;
+          }
+        }
+      }
+    }
+  }
+}
+/* ------------ Booking Section End ----------- */

@@ -1,0 +1,197 @@
+//Import Utilities
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../utilities/placeholders" as *;
+
+/* ----------- Footer Section Start ----------- */
+footer {
+  background-color: $light--orange;
+  padding: 2rem 0;
+
+  .container {
+
+    @include media(large) {
+      display        : flex;
+      justify-content: space-between;
+      align-items    : flex-start;
+    }
+
+    .footer--about {
+      display: none;
+
+      @include media(large) {
+        display: block;
+      }
+
+      span {
+        font-family   : $second--font;
+        font-size     : 1.8rem;
+        color         : $white;
+        font-weight   : 700;
+        letter-spacing: .15rem;
+      }
+
+      > ul {
+        list-style      : none;
+        font-family     : $first--font;
+        text-align      : left;
+        border-radius   : $primary--radius;
+
+        li {
+          margin: 1rem 0;
+
+          &:hover a {
+            color: $white;
+          }
+
+          a {
+            color          : $dark--blue;
+            text-decoration: none;
+            font-weight    : 700;
+            font-size      : .9rem;
+            text-transform : capitalize;
+          }
+        }
+      }
+    }
+
+    .footer--whatwedo {
+      display: none;
+
+      @include media(large) {
+        display: block;
+      }
+
+      span {
+        font-family   : $second--font;
+        font-size     : 1.8rem;
+        color         : $white;
+        font-weight   : 700;
+        letter-spacing: .15rem;
+      }
+
+      > ul {
+        list-style      : none;
+        font-family     : $first--font;
+        text-align      : left;
+        border-radius   : $primary--radius;
+
+        li {
+          margin: 1rem 0;
+
+          &:hover a {
+            color: $white;
+          }
+
+          a {
+            color          : $dark--blue;
+            text-decoration: none;
+            font-weight    : 700;
+            font-size      : .9rem;
+            text-transform : capitalize;
+          }
+        }
+      }
+    }
+
+    .footer--newsletter--social {
+
+      > span {
+        font-family   : $second--font;
+        font-size     : 5.5vw;
+        font-weight   : 800;
+        color         : $white;
+        text-transform: capitalize;
+        margin-bottom : 1rem;
+        display       : block;
+        text-align    : center;
+
+        @include media(x-small) {
+          font-size: 1.7rem;
+        }
+      }
+
+      form {
+
+        @include media(small) {
+          max-width: 35em;
+          margin   : 0 auto;
+        }
+
+        input {
+          width           : 100%;
+          border          : .13rem solid $light--background;
+          outline         : none;
+          background-color: $medium--background;
+          border-radius   : $full--radius;
+          padding         : 1.5rem;
+
+          &:focus {
+            font-family   : $first--font;
+            color         : $dark--blue;
+            font-size     : .9rem;
+            font-weight   : 600;
+            letter-spacing: .08rem;
+            padding       : 1.4rem;
+          }
+
+          &::placeholder {
+            font-family   : $first--font;
+            font-weight   : 600;
+            font-size     : 1.1rem;
+            color         : $gray;
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      .social {
+        margin-top: 1rem;
+
+        > span {
+          font-family   : $second--font;
+          font-size     : 5.5vw;
+          font-weight   : 800;
+          color         : $white;
+          text-transform: capitalize;
+          margin-bottom : 1rem;
+          display       : block;
+          text-align    : center;
+
+          @include media(x-small) {
+            font-size: 1.7rem;
+          }
+        }
+
+        .social--media {
+          margin         : 0 auto;
+          width          : 12rem;
+          display        : flex;
+          justify-content: space-between;
+          align-items    : center;
+
+          i {
+            display         : grid;
+            place-items     : center;
+            font-size       : 1.6rem;
+            width           : 3rem;
+            aspect-ratio    : 1;
+            background-color: $white;
+            border-radius   : $full--radius;
+            color           : $dark--blue;
+            cursor          : pointer;
+
+            &:hover {
+              color: $dark--orange;
+            }
+
+            @include media(x-small) {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* ------------ Footer Section End ------------ */

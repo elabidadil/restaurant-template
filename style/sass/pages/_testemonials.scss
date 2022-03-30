@@ -1,0 +1,93 @@
+//Import Utilities
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../utilities/placeholders" as *;
+
+/* -------- Testemonials Section Start -------- */
+.testemonials {
+  padding: 4rem 0;
+
+  .container {
+
+    @include media(x-small) {
+      margin               : 0 auto;
+      display              : grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap                  : 2rem;
+    }
+
+    .testemonial {
+      background-color: $light--background;
+      border-radius   : $secondary--radius;
+      padding         : 2rem 3rem;
+      box-shadow      : $primary--shadow;
+
+      &:nth-child(2) {
+        margin: 2rem 0;
+
+        @include media(x-small) {
+          margin: 0;
+        }
+      }
+
+      img {
+        width  : 10rem;
+        margin : 0 auto .5rem;
+        display: block;
+
+        @include media(x-small) {
+          width: 7rem;
+        }
+      }
+
+      .testemonial--content {
+        text-align: center;
+
+        span {
+          font-family   : $second--font;
+          font-size     : 9vw;
+          font-weight   : 800;
+          color         : $dark--blue;
+          text-transform: capitalize;
+
+          @include media(x-small) {
+            font-size: 2rem;
+          }
+
+          &.testemonial--date {
+            color      : $dark--background;
+            font-family: $first--font;
+            font-weight: 600;
+            font-size  : 1.2rem;
+            display    : block;
+            margin-top : .3rem;
+          }
+        }
+
+        p {
+          margin-top : 1rem;
+          font-family: $first--font;
+          font-size  : 1.2rem;
+          text-align : justify;
+          font-weight: 600;
+          color      : $dark--blue;
+          line-height: 1.7rem;
+        }
+
+        .review--stars {
+          margin-top : 1rem;
+
+          i {
+            color    : $light--orange;
+            font-size: 1.3rem;
+
+            &:last-of-type {
+              color: $dark--background;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* --------- Testemonials Sections End -------- */

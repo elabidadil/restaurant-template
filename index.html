@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Template</title>
+  <!-- --------------- Css File ---------------- -->
+  <link rel="stylesheet" href="style/style.css">
+  
+  <!-- ------------- Font Awesome -------------- -->
+  <script src="https://kit.fontawesome.com/5eeff1c8f9.js" crossorigin="anonymous"></script>
+
+  <!-- ------------- Google Fonts -------------- -->
+  <!-- Montserrat --><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Playfair --><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- ------------ Home Page Start ------------ -->
+  <div class="home--page">
+    <div class="container">
+      <nav class="home--page--nav">
+        <span class="main--logo">YourLogo</span>
+        <ul class="home--page--nav--menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="sign--up--btn">Sign up</button>
+        <div class="mobile--hamburger--icon">
+          <span class="top--line"></span>
+          <span class="middle--line"></span>
+          <span class="bottom--line"></span>
+        </div>
+        <ul class="mobile--nav--menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#" >Contact</a></li>
+          <li><a href="#" class="signin">Sign in</a></li>
+          <li><a href="#" class="signup">Sign up</a></li>
+        </ul>
+      </nav>
+      <main>
+        <img src="assets/images/home--page--image.svg" alt="" class="main--image">
+        <div class="main--content">
+          <h1>Eat, drink and Enjoy.</h1>
+          <p>Your restaurant is waiting for you.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+          <div class="main--btns">
+            <button class="btn btn-o">Explore</button>
+            <button class="btn seemore--btn">See menu</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <!-- ------------- Home Page End ------------- -->
+  <!-- --------- Booking Section Start --------- -->
+  <div class="booking--section">
+    <div class="container">
+      <span>Book a table</span>
+      <i class="fa-solid fa-arrow-turn-down booking--arrow"></i>
+      <form action="#">
+        <div class="date--input">
+          <label for="date">Date</label>
+          <i class="fa-solid fa-angle-down"></i>
+          <input type="date" name="date">
+        </div>
+        <div class="time--input">
+          <label for="time">Time</label>
+          <i class="fa-solid fa-angle-down"></i>
+          <input type="time" name="time">
+        </div>
+        <div class="mail--input">
+          <label for="mail">Mail</label>
+          <i class="fa-solid fa-angle-down"></i>
+          <input type="mail" name="mail" autocomplete="off">
+        </div>
+        <input type="submit" value="Cheek availability">
+      </form>
+    </div>
+  </div>
+  <!-- ---------- Booking Section End ---------- -->
+  <!-- ------- Categories Section Start -------- -->
+  <div class="categories--section">
+    <div class="container">
+
+      <div class="section--title">
+        <span>Delicious</span>
+        <h2>Food Categories</h2>
+      </div>
+
+      <div class="categories--list">
+        <div class="category meat">
+          <img src="assets/images/meat--dish.svg" alt="">
+          <div class="category--content">
+            <span>Meat</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+            <button class="btn btn-o">Read more</button>
+          </div>
+        </div>
+        <div class="category fish">
+          <img src="assets/images/fish--dish.svg" alt="">
+          <div class="category--content">
+            <span>Fish</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+            <button class="btn btn-o">Read more</button>
+          </div>
+        </div>
+        <div class="category drinks">
+          <img src="assets/images/drink--glass.svg" alt="" class="drink--image">
+          <div class="category--content">
+            <span>Drinks</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+            <button class="btn btn-o">Read more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -------- Categories Section End --------- -->
+  <!-- -------- Protocol Section Start --------- -->
+  <div class="protocol--section">
+    <div class="container">
+      <div class="section--title">
+        <span class="cyan--color">COVID-19 Protocol</span>
+        <h2>We care about you</h2>
+        <button class="btn btn-c">Read more</button>
+      </div>
+      <img src="assets/images/restaurant--workers.svg" alt="">
+    </div>
+  </div>
+  <!-- --------- Protocol Section Emd ---------- -->
+  <!-- ---------- Story Section Start ---------- -->
+  <div class="story--section">
+    <div class="container">
+      <div class="story--content">
+        <div class="story--ingredients--title">
+          <span>Story</span>
+          <h3>Our restaurant</h3>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+        <button class="btn btn-c">Read more</button>
+      </div>
+      <img src="assets/images/bartender--and--costumer.svg" alt="">
+    </div>
+  </div>
+  <!-- ----------- Story Section End ----------- -->
+  <!-- ------- Ingredients Section Start ------- -->
+  <div class="ingredients--section">
+    <div class="container">
+      <div class="ingredients--content">
+        <div class="story--ingredients--title">
+          <span>Ingredients</span>
+          <h3>Fresh and healthy ingredients</h3>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+        <button class="btn btn-c">Read more</button>
+      </div>
+      <img src="assets/images/ingrediants.svg" alt="">
+    </div>
+  </div>
+  <!-- -------- Ingredients Section End -------- -->
+  <!-- ------- Chef Words Section Start -------- -->
+  <div class="chef--section">
+    <div class="container">
+      <div class="chef--word--content">
+        <div class="chef--title">
+          <span>Words from</span>
+          <h4>The chef</h4>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+        <button class="btn btn-o">Read more</button>
+      </div>
+      <img src="assets/images/restaurant--chef.svg" alt="">
+    </div>
+  </div>
+  <!-- -------- Chef Words Section End --------- -->
+  <!-- ------ Testemonials Section Start ------- -->
+  <div class="testemonials">
+    <div class="container">
+      <div class="testemonial">
+        <img src="assets/images/male--customer--1.svg" alt="">
+        <div class="testemonial--content">
+          <span class="full--name">Jhon smith</span>
+          <span class="testemonial--date">Aug/12/21</span>
+          <p><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</q></p>
+          <div class="review--stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+      <div class="testemonial">
+        <img src="assets/images/female--customer.svg" alt="">
+        <div class="testemonial--content">
+          <span class="full--name">Jhon smith</span>
+          <span class="testemonial--date">Aug/12/21</span>
+          <p><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</q></p>
+          <div class="review--stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+      <div class="testemonial">
+        <img src="assets/images/male--customer--2.svg" alt="">
+        <div class="testemonial--content">
+          <span class="full--name">Jhon smith</span>
+          <span class="testemonial--date">Aug/12/21</span>
+          <p><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</q></p>
+          <div class="review--stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ------- Testemonials Section End -------- -->
+  <!-- -------- Subscribe Section Start -------- -->
+  <div class="subscribe--section">
+    <div class="container">
+      <div class="subscribe--title">
+        <span>Subscribe</span>
+        <h5>To our newsletter</h5>
+      </div>
+      <form action="#">
+        <input type="text" placeholder="Name">
+        <input type="mail" placeholder="Mail">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+        <input type="submit" name="" id="" value="Send message">
+      </form>
+      <img src="assets/images/leaf--1.svg" alt="">
+      <img src="assets/images/leaf--2.svg" alt="">
+      <img src="assets/images/avocado.svg" alt="">
+      <img src="assets/images/lemon.svg" alt="">
+    </div>
+  </div>
+  <!-- --------- Subscribe Section End --------- -->
+  <!-- --------- Footer Section Start ---------- -->
+  <footer>
+    <div class="container">
+      <div class="footer--about">
+        <span>About</span>
+        <ul>
+          <li><a href="#">History</a></li>
+          <li><a href="#">Our team</a></li>
+          <li><a href="#">Mission statement</a></li>
+          <li><a href="#">Terms & Condition</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </ul>
+      </div>
+      <div class="footer--whatwedo">
+        <span>What we do</span>
+        <ul>
+          <li><a href="#">News and stories</a></li>
+          <li><a href="#">Publications</a></li>
+          <li><a href="#">Take action</a></li>
+          <li><a href="#">Recomendations</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+      <div class="footer--newsletter--social">
+        <span>Sign up to receive our newsletter</span>
+        <form action="#">
+          <input type="email" placeholder="Email">
+        </form>
+        <div class="social">
+          <span>Follow us!</span>
+          <div class="social--media">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ---------- Footer Section End ----------- -->
+</body>
+</html>

@@ -1,0 +1,38 @@
+//Import Utilities
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../utilities/placeholders" as *;
+
+/* ---------- Protocol Section Start ---------- */
+.protocol--section {
+  padding: 4rem 0;
+
+  .container {
+
+    img {
+      width     : 170%;
+      transform : translateX(-20.7%);
+      margin-top: -6rem;
+
+      @include media(x-small) {
+        margin-top: -8.5rem;
+      }
+
+      @include media(small) {
+        margin-top: -11rem;
+      }
+
+      @include media(medium) {
+        margin-top: -13rem;
+      }
+
+      @include media(large) {
+        width    : 90%;
+        display  : block;
+        margin   : -8rem auto 0;
+        transform: translateX(0);
+      }
+    }
+  }
+}
+/* ----------- Protocol Section End ----------- */

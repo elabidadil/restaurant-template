@@ -1,0 +1,77 @@
+//Import Utilities
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../utilities/placeholders" as *;
+
+
+/* --------- Categories Section Start --------- */
+.categories--section {
+  padding: 4rem 0;
+
+  .container {
+
+    .categories--list {
+      
+
+      @include media(x-small) {
+        width                : 100%;
+        margin               : 0 auto;
+        display              : grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap                  : 2rem;
+      }
+
+      .category {
+        background-color: $light--background;
+        border-radius   : $secondary--radius;
+        text-align      : center;
+        padding         : 2rem 3rem;
+        box-shadow      : $primary--shadow;
+
+        &.fish {
+          margin: 2rem 0;
+
+          @include media(x-small) {
+            margin: 0 auto;
+          }
+        }
+
+        img {
+          width: 60%;
+
+          &.drink--image {
+            @include media(x-small) {
+              width: 8.8rem;
+            }
+          }
+
+          @include media(x-small) {
+            width: 10rem;
+          }
+        }
+
+        .category--content {
+          margin-top: 1rem;
+
+          span {
+            font-family: $second--font;
+            font-size  : 2.3rem;
+            font-weight: 800;
+            color      : $dark--blue;
+          }
+
+          p {
+            margin-top : 1rem;
+            font-family: $first--font;
+            font-size  : 1.2rem;
+            text-align : justify;
+            font-weight: 600;
+            color      : $dark--blue;
+            line-height: 1.7rem;
+          }
+        }
+      }
+    }
+  }
+}
+/* ---------- Categories Section End ---------- */

@@ -1,0 +1,10 @@
+//Import Utilities
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../utilities/placeholders" as *;
+
+.container {
+  width    : 90%;
+  max-width: 1200px;
+  margin   : 0 auto;
+}

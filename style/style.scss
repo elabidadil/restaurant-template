@@ -1,0 +1,26 @@
+//Import Utilities
+@use "sass/utilities/variables" as *;
+@use "sass/utilities/mixins" as *;
+@use "sass/utilities/placeholders" as *;
+
+//Import Layouts
+@use "sass/layouts/navbar" as *;
+@use "sass/layouts/main" as *;
+@use "sass/layouts/footer" as *;
+
+//Import Pages
+@use "sass/pages/home" as *;
+@use "sass/pages/subscribe" as *;
+@use "sass/pages/protocol" as *;
+@use "sass/pages/categories" as *;
+@use "sass/pages/booking" as *;
+@use "sass/pages/story" as *;
+@use "sass/pages/testemonials" as *;
+@use "sass/pages/ingredients" as *;
+@use "sass/pages/chefwords" as *;
+
+//Import Components
+@use "sass/components/grids" as *;
+
+//Import Base
+@use "sass/base/base" as *;

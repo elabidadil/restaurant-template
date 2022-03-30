@@ -1,0 +1,65 @@
+//Import Utilities
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../utilities/placeholders" as *;
+
+/* --------- Ingredients Section Start -------- */
+.ingredients--section {
+  padding: 2rem 0 4rem;
+
+  .container {
+    display        : flex;
+    flex-direction : row-reverse;
+    justify-content: space-between;
+    align-items    : center;
+
+    .ingredients--content {
+
+      @include media(large) {
+        width: 40%;
+      }
+
+      .story--ingredients--title {
+
+        span {
+          font-family: $first--font;
+          font-size  : 1.5rem;
+          font-weight: 600;
+          color      : $light--orange;
+        }
+  
+        h3 {
+          font-family   : $second--font;
+          font-size     : 10vw;
+          font-weight   : 800;
+          color         : $dark--blue;
+          text-transform: capitalize;
+  
+          @include media(x-small) {
+            font-size: 2.5rem;
+          }
+        }
+      }
+  
+      p {
+        margin-top : 1rem;
+        font-family: $first--font;
+        font-size  : 1.2rem;
+        text-align : justify;
+        font-weight: 600;
+        color      : $dark--blue;
+        line-height: 1.7rem;
+      }
+    }
+
+    > img {
+      display: none;
+
+      @include media(large) {
+        display: block;
+        width  : 50%;
+      }
+    }
+  }
+}
+/* ---------- Ingredients Section End --------- */

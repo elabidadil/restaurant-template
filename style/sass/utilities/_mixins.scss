@@ -1,0 +1,62 @@
+// Flex Box
+@mixin flexBox($justify, $aligni, $alignc) {
+  display        : flex;
+  justify-content: $justify;
+  align-items    : $aligni;
+  align-content  : $alignc;
+}
+
+// Flex Box Center
+@mixin flexCenter {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+}
+
+// Flex Box Space Between
+@mixin flexSpaceBetween {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+}
+
+// Prefixes
+@mixin prefix($property, $value, $prefixes:()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+  #{$property}: $value;
+}
+
+// Media Queries
+@mixin media($size) {
+  @if $size == x-small {
+    @media (min-width: 450px) {
+      @content;
+      }
+    } @if $size == small {
+      @media (min-width: 601px) {
+        @content;
+      }
+    } @if $size == medium {
+      @media (min-width: 768px) {
+        @content;
+      }
+    } @if $size == large {
+      @media (min-width: 992px) {
+        @content;
+      }
+    } @if $size == x-large {
+      @media (min-width: 1200px) {
+        @content;
+      }
+    } @if $size == 1080 {
+      @media (min-width: 1920px) {
+        @content;
+      }
+    } @if $size == 4k {
+      @media (min-width: 3840px) {
+        @content;
+    }
+  }
+}

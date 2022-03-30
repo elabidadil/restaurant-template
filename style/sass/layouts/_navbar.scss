@@ -1,0 +1,133 @@
+//Import Utilities
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../utilities/placeholders" as *;
+
+.home--page {
+  .container {
+
+    .home--page--nav {
+      display         : flex;
+      justify-content : space-between;
+      align-items     : center;
+      background-color: $dark--blue;
+      padding         : .6rem 1.5rem;
+      border-radius   : $full--radius;
+
+      .main--logo {
+        font-family: $second--font;
+        color      : $white ;
+        font-weight: 700;
+        font-size  : 1.5rem;
+      }
+
+      .mobile--hamburger--icon {
+        cursor: pointer;
+
+        @include media(medium) {
+          display: none;
+        }
+
+        span {
+          width           : 2.5rem;
+          height          : .2rem;
+          border-radius   : $primary--radius;
+          background-color: $white;
+          display         : block;
+          
+          &.middle--line {
+            margin: .5rem 0;
+          }
+        }
+      }
+
+      .home--page--nav--menu {
+        display         : none;
+        list-style      : none;
+        font-family     : $first--font;
+
+        @include media(medium) {
+          display: flex;
+        }
+
+        li {
+          margin: 0 .7rem;
+
+          &:hover a {
+            color: $dark--orange;
+          }
+
+          a {
+            color          : $white;
+            text-decoration: none;
+            font-weight    : 500;
+            font-size      : .9rem;
+            letter-spacing : .08rem;
+            text-transform : capitalize;
+          }
+        }
+      }
+
+      .sign--up--btn {
+        display: none;
+        cursor : pointer;
+
+        @include media(medium) {
+          display         : inline-block;
+          background-color: transparent;
+          border          : none;
+          outline         : none;
+          font-weight     : 700;
+          font-family     : $first--font;
+          font-size       : .9rem;
+          letter-spacing  : .08rem;
+          text-transform  : capitalize;
+          color           : $cyan;
+        }
+
+        &:hover {
+          color: $dark--orange;
+        }
+      }
+
+      .mobile--nav--menu {
+        display: none;
+        list-style      : none;
+        font-family     : $first--font;
+        text-align      : center;
+        background-color: $dark--blue;
+        padding         : 2rem 0 1.5rem;
+        border-radius   : $primary--radius;
+        position        : absolute;
+        width           : 100%;
+        left            : 0;
+        top             : 4rem;
+        transition      : all .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        z-index: -1;
+        // display         : none;
+
+        li {
+          margin: 1rem 0;
+
+          &:hover a {
+            color: $dark--orange;
+          }
+
+          a {
+            color          : $white;
+            text-decoration: none;
+            font-weight    : 500;
+            font-size      : 1.2rem;
+            letter-spacing : .15rem;
+            text-transform : uppercase;
+
+            &.signin, &.signup {
+              color: $cyan;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}

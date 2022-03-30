@@ -1,0 +1,19 @@
+//Import Utilities
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../utilities/placeholders" as *;
+
+*, *::after, *::before {
+  padding   : 0;
+  margin    : 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $medium--background;
+  margin-top      : 2rem;
+}

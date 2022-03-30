@@ -1,0 +1,13 @@
+//Import Utilities
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../utilities/placeholders" as *;
+
+/* -------------- Home Page Start ------------- */
+.home--page {
+  
+  .container {
+    position: relative;
+  }
+}
+/* --------------- Home Page End -------------- */

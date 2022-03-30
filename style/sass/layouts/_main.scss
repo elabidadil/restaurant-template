@@ -1,0 +1,112 @@
+//Import Utilities
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../utilities/placeholders" as *;
+
+.home--page {
+  .container {
+    
+    main {
+      width: 100%;
+
+      @include media(x-large) {
+        height: 33.1rem;
+      }
+
+      .main--image {
+        width: 100%;
+
+        @include media(x-small) {
+          max-width: 35rem;
+          margin   : 0 auto;
+          display  : block;
+        }
+
+        @include media(x-large) {
+          position : absolute;
+          top      : 3.2rem;
+          right    : 0;
+          max-width: 50rem;
+          display  : block;
+        }
+      }
+
+      .main--content {
+        @include media(x-large) {
+          margin-top: 5rem;
+          width     : 50%;
+        }
+
+        h1 {
+          font-family: $second--font;
+          font-size  : 13.4vw;
+          color      : $dark--blue;
+          font-weight: 900;
+          line-height: 3.7rem;
+          text-align : left;
+          margin-top : 1rem;
+
+          @include media(x-small) {
+            font-size  : 4rem;
+            line-height: 5rem;
+          }
+
+          @include media(medium) {
+            text-align: center;
+          }
+
+          @include media(x-large) {
+            width     : 80%;
+            text-align: left;
+          }
+        }
+
+        p {
+          color      : $dark--blue;
+          font-family: $first--font;
+          text-align : justify;
+
+          @include media(x-large) {
+            width: 27rem;
+          }
+
+          &:first-of-type {
+            margin     : 1.5rem 0 1rem;
+            font-weight: 700;
+            font-size  : 5.08vw;
+
+            @include media(x-small) {
+              font-size: 1.5rem;
+            }
+          }
+
+          &:last-of-type {
+            font-size    : 4.5vw;
+            text-align   : justify;
+            font-weight  : 600;
+            line-height  : 1.6rem;
+
+            @include media(x-small) {
+              font-size  : 1.1rem;
+              line-height: 2rem;
+            }
+          }
+        }
+
+        .main--btns {
+
+          button {
+            
+            &.explore--btn {
+              margin-right: .2rem;
+            }
+
+            &.seemore--btn {
+              color: $dark--orange;
+            }
+          }
+        }
+      }
+    }
+  }
+}
